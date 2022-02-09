@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Compose Mail</title>
+    <link href="./Styles/index.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+        <form>
+            <div class="mailField" >
+                <label for="from">From</label>
+                <input type="email" id="from" class="notSend" value="swaraj.trivedi@leadsquared.com" />
+            </div>
+            <br><br>
+            <div class="mailField">
+                <label for="to">To</label>
+                <input type="email" id="to" class="notSend" />
+                <button onclick="viewCCBCC()" class="notSend">CC/BCC</button>
+            </div>
+            <br><br>
+            <div id="CCBCC">
+                
+            </div>
+            <br><br>
+            <div class="mailField">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" class="notSend" required/>
+            </div>
+            <br><br>
+            <div class="content">
+                <textarea id="TextArea" required></textarea>
+            </div>
+            <button ><span class="material-icons">send</span></button>
+            <span class="material-icons" onclick="boldText()" id="boldButton">format_bold</span>
+            <span class="material-icons" onclick="italicText()" id="italicButton">format_italic</span>
+            <span class="material-icons" onclick="uploadAttachment()" id="attachButton">attach_file</span>
+            <span class="material-icons" onclick="changeCase()" id="caseButton">format_size</span>
+            <span class="material-icons">link</span>
+            <span class="material-icons" onclick="deleteAll()" id="delButton">delete</span>
+        </form>
+    </div>
+</body>
+<script  src="./Scripts/index.js"></script>
+</html>

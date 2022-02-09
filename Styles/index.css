@@ -1,0 +1,47 @@
+:root{
+    --submitBg-color: blue;
+    --submitTxt-color:white;
+    --border-color: rgb(17, 179, 243);
+}
+#submit{
+    background-color: var(--submitBg-color);
+    color: var(--submitTxt-color);
+}
+#delButton{
+    float: right;
+}
+
+.main{
+    align-items: center;
+    margin: 20px;
+}
+.notSend{
+    border-top-style:hidden ;
+    border-left-style: hidden;
+    border-right-style: hidden;
+    border-bottom-color: var(--border-color);
+    width:100%;
+    
+}
+.mailField{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.content textarea{
+    width: 100%;
+    height: 60vh;
+    border-color: var(--border-color);
+}
+
+.mailField button{
+    border: none;
+    width: 10%;
+    height: 10%;
+    background-color: var(--submitTxt-color);
+}
+.main label{
+    display: inline-block;
+
+}
